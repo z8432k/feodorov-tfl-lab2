@@ -1,0 +1,26 @@
+{
+  "name": "@z8432k/feodorov-tfl-lab2",
+  "version": "1.0.0",
+  "description": "SUAI student laroratory work. DFA implementation",
+  "type": "module",
+  "main": "bin/main.js",
+  "bin": {
+    "feodorov-tfl-lab2": "feodorov-tfl-lab2.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z8432k/feodorov-tfl-lab2.git"
+  },
+  "author": "Alexander Feodorov <webmaster@unixcomp.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/z8432k/feodorov-tfl-lab2/issues"
+  },
+  "homepage": "https://github.com/z8432k/feodorov-tfl-lab2#readme"
+}
