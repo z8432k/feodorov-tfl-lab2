@@ -8,10 +8,10 @@ const states = new Map([
     process(data) {
       switch(data) {
         case "0":
-          this._setState("L")
+          this._setState("L");
           break;
         case "1":
-          this._setState("M")
+          this._setState("M");
           break;
         default:
           throw new Error(`Unexpected symbol [${data}].`);
@@ -25,10 +25,10 @@ const states = new Map([
     process(data) {
       switch(data) {
         case "0":
-          this._setState("C")
+          this._setState("C");
           break;
         case "1":
-          this._setState("J")
+          this._setState("J");
           break;
         default:
           throw new Error(`Unexpected symbol [${data}].`);
@@ -42,10 +42,10 @@ const states = new Map([
     process(data) {
       switch(data) {
         case "0":
-          this._setState("E")
+          this._setState("E");
           break;
         case "1":
-          this._setState("H")
+          this._setState("H");
           break;
         default:
           throw new Error(`Unexpected symbol [${data}].`);
@@ -59,10 +59,10 @@ const states = new Map([
     process(data) {
       switch(data) {
         case "0":
-          this._setState("B")
+          this._setState("B");
           break;
         case "1":
-          this._setState("D")
+          this._setState("D");
           break;
         default:
           throw new Error(`Unexpected symbol [${data}].`);
@@ -76,7 +76,7 @@ const states = new Map([
     process(data) {
       switch(data) {
         case "0":
-          this._setState("E")
+          this._setState("E");
           break;
         default:
           throw new Error(`Unexpected symbol [${data}].`);
@@ -90,7 +90,7 @@ const states = new Map([
     process(data) {
       switch(data) {
         case "1":
-          this._setState("I")
+          this._setState("I");
           break;
         default:
           throw new Error(`Unexpected symbol [${data}].`);
@@ -104,7 +104,7 @@ const states = new Map([
     process(data) {
       switch(data) {
         case "0":
-          this._setState("C")
+          this._setState("C");
           break;
         default:
           throw new Error(`Unexpected symbol [${data}].`);
@@ -118,7 +118,7 @@ const states = new Map([
     process(data) {
       switch(data) {
         case "1":
-          this._setState("J")
+          this._setState("J");
           break;
         default:
           throw new Error(`Unexpected symbol [${data}].`);
@@ -132,10 +132,10 @@ const states = new Map([
     process(data) {
       switch(data) {
         case "0":
-          this._setState("I")
+          this._setState("I");
           break;
         case "1":
-          this._setState("G")
+          this._setState("G");
           break;
         default:
           throw new Error(`Unexpected symbol [${data}].`);
@@ -149,7 +149,7 @@ const states = new Map([
     process(data) {
       switch(data) {
         case "1":
-          this._setState("H")
+          this._setState("H");
           break;
         default:
           throw new Error(`Unexpected symbol [${data}].`);
@@ -163,7 +163,7 @@ const states = new Map([
     process(data) {
       switch(data) {
         case "0":
-          this._setState("D")
+          this._setState("D");
           break;
         default:
           throw new Error(`Unexpected symbol [${data}].`);
@@ -192,7 +192,7 @@ class DFA extends Transform {
   }
 
   _processData(data) {
-    this._state.process.call(this, data)
+    this._state.process.call(this, data);
   }
 
   _setState(state) {
